@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Del</title>
+    <link rel="icon"
+    href="https://storage.googleapis.com/pod_public/1300/146211.jpg"
+    type="image/x-icon/>"
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    img{
+        display: block;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin-bottom: 0.5rem;
+        }
+
+        form input {
+            padding: 0.5rem;
+            margin-bottom: 1em;
+        }
+
+        form textarea {
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+
+        form button {
+            padding: 0.5em;
+            background-color: hotpink;
+            color: darkblue;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+</style>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+    <h1>Hey, I'm Del! 😄</h1>
+    <img src="https://static.wixstatic.com/media/126ef1_d07c16272510424ca905a642f168d48a~mv2.jpeg/v1/crop/x_323,y_917,w_2701,h_3115/fill/w_618,h_828,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_6444.jpeg"
+    width="245"
+    height="300" alt="image">
+
+    <p>I'm a 27 year old UX Designer and Frontend Developer living in London.
+        My tech journey started in 2022 when I took part in a bootcamp to learn the fundamentals of UX & UI Design. I thoroughly enjoyed learning something new and creative in the tech field. You can check out some of the projects I did during my course below:<br><br>
+        <a href="https://www.designedbydw.com">My Portfolio</a><br><br>
+        Fast forward to 2023, I landed my first UX Design role in a start-up in the Fintech industry, where I was introduced to the world of software developlment during my time there. I quickly became interested in the technical side of design, and considered learning more about how to turn final designs into functioning digital products.<br><br>
+        Now, I am learning how to code, eek!<br>
+    </p>
+    
+    <h2>Where do I want this skill to take me?</h2>
+    <h3>My goals are:</h3>
+    <ul>
+        <li>To freelance and have control over my workload and my time. </li>
+        <li>To combine my UI knowledge with Frontend.</li>
+        <li>And to build cool projects!</li>
+    </ul>
+    
+    <h2>A little more about me.</h2>
+    <h3>My interests:</h3>
+
+    <ul>
+        <li>Reading 📖.</li>
+        <li>Listening to music 🎧.</li>
+        <li>Going for walks 🏃.</li>
+        <li>Spending time with family 👩‍👧‍👧.</li>
+    </ul>
+<section>
+    <h2 style="text-align: center;">Want to know more?<br>Hit me up!</h2>
+    <form action="/submit-form" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Send A Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+    <br>
+</body>
+</html>

@@ -1,0 +1,93 @@
+------- Del Theory Questions and Answers -------
+
+QUESTION 1
+Q. What does HTML stand for, and what is its primary purpose in web development? 
+
+A. HTML stands for Hypertext Markup Language and is used to design web pages using elements. 
+These elements are used to create content on a page and make it functional.
+
+----------
+QUESTION 2
+Q. Explain the difference between HTML elements and HTML attributes. Provide examples of  each. 
+
+A. HTML elements are used to describe the content that is shown on a webpage, and how the content should be shown.
+
+Example: <a></a>
+Example: <img></img>
+Example: <p></p>
+
+HTML attributes provide additional information about the element, for example a source/destination link, size, language or font etc.
+
+Example: <a href></a>
+Example: <img src=”image.jpg” width “500” height “500”></img>
+Example: <p style=”color:red;”></p>
+
+----------
+QUESTION 3
+Q. What is the purpose of the "DOCTYPE" declaration in a HTML document? What happens if you omit it?
+
+A. The DOCTYPE declaration determines the type of HTML document so it can be accurately displayed in a webpage. 
+
+-----------
+QUESTION 4
+Q. Describe the difference between inline elements and block-level elements in HTML. Give examples of each. 
+
+A. A block-level element is an element that takes up the full width of the element that contains it and usually starts on a new line. 
+
+Examples: <p>, <ul>, <h1>, <div>
+
+An inline element does not start on a new line and only takes up the width that its content takes up.
+
+Examples: <a>, <b>, <i>, <img>
+
+-----------
+QUESTION 5
+Q. Explain the significance of the following HTML tags and their usage: 
+
+<head> : this tag describes the document's metadata that is used by browsers and search engines. The tag includes elements such as the title of the document, external links and script.
+
+<div> : this tag is used as a container for other HTML elements. It is used to divide sections of a webpage for various reasons, including for emphasis of a particular content or for visual design.
+
+<a> : this tag is used to insert hyperlinks to the HTML document. Links can be used for navigation within a webpage or to lead users to another window or tab.
+the tag is normally used with the 'href' attribute which allows you to insert the destination link.
+
+<img> : this tag is used to insert an image to a HTML document in order to improve the appearance of a webpage. 
+
+<ul> : this tag is used to insert unordered lists into a webpage, which displays data in list form in no specific order.
+
+<ol> : this tag is used to insert ordered lists into a webpage, which displays data in list form in a specified order, for example alphabetically or numerically.
+
+<li> : this tag describes a list item within an unordered or ordered list.
+
+-----------
+QUESTION 6: 
+Q. What are semantic HTML elements? Provide examples of semantic elements and explain  why they are important for web accessibility and SEO. 
+
+A. Semantic HTML elements are used to structure your content based on an element's meaning and not its appearance. They help to define what the content in each block represents, which is important for accessibility as it allows screen readers to identify a page's content for those who are visually impaired.
+Search engines also favour content that has been marked up correctly.
+
+-----------
+QUESTION 7: 
+Q. What is the purpose of the HTML form element (<form>) and its associated form controls?  Provide examples of common form controls. 
+
+A. the HTML form element is used to insert user input areas. It serves as a container for other input elements such as text fields, checkboxes, radio buttons etc, using the <input type=""> tag.
+
+-----------
+QUESTION 8: 
+Q. How can you add comments in HTML? Why are comments useful in web development? 
+
+A. Comments can be added by typing Command + /, and are useful for explaining the purpose of a code to make it easier for other developers to understand what is being built.
+
+-----------
+QUESTION 9: 
+Q. What is the HTML5 standard, and what are some of the new features introduced in HTML5? 
+
+A. HTML5 was created to create a more robust user experience. The new features include semantics which make HTML documents more compatiable with screen readers and other accessibilty tools. HTML5 also makes it easier to embedd images and video to webpages, and allows easier integration Javascript and CSS. 
+
+----------
+QUESTION 10: 
+
+Q. Explain the concept of "responsive web design" and how HTML contributes to creating responsive websites.
+
+A. Responsive web design is the backbone of good user expeirence. It's an approach on how to design web pages that are fluid and that can render on various screen sizes.
+HTML allows developers to build websites in a way that is digestible and accessible by using tags.
