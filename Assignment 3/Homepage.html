@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hmpg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap" rel="stylesheet">
+    <title>Tasty Treats</title>
+    <style>
+        @font-face {
+            font-family: "Wondershine";
+            src:url(wondershine.ttf);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header, including nav menu and search bar -->
+    <header>
+        <nav>
+            <div class="nav-menu">
+                <a href="#" class="top-menu">Offers</a>
+                <a href="#" class="top-menu">Services</a>
+                <a href="#" class="top-menu">Menu</a>
+            </div>
+            <input type="text" placeholder="Search recipes...">
+        </nav>
+    </header>
+    <!-- Main section of homepage with H1 text -->
+    <div class="main">
+        <h1>TASTY DINNER IDEAS</h1>
+        <p>Welcome to your go-to destination for mouthwatering dinner inspiration!</p>
+        <a href="#explore_dishes"><button class="button1" style="transition-delay: 0.3s;">Explore dishes</button></a> <!-- This button leads to a section within the webpage: Featured recipes -->
+    </div>
+    <!-- Featured recipes section -->
+    <br>
+    <h2 id="explore_dishes">FEATURED RECIPES</h2>
+    <br>
+    <div class="top-images"> <!-- Images and buttons for the recipes, Honey Garlic and Tacos are active buttons and lead to separate html doc -->
+        <div>
+            <img class="featured-image" src="https://www.seriouseats.com/thmb/BrtAL6nxZA3IhIrKchnqV5RDXX8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20210717-BROWN-STEW-CHICKEN-JILLIAN-ATKINSON-seriouseats-15-33d4615ce31e46a5a2bde22b733775d3.jpg" alt="brown stew chicken on plate">
+            <div class="content">
+                <button class="button2">Brown Stew Chicken</button>
+            </div>
+        </div>
+        <div>
+            <img class="featured-image" src="https://www.kitchensanctuary.com/wp-content/uploads/2019/11/Honey-Garlic-Chicken-square-FS-94.jpg" alt="Honey garlic chicken on plate">
+            <div>
+                <a href="Recipe2-Chicken.html"><button class="button2">Honey Garlic Chicken</button></a>
+            </div>
+        </div>
+        <div>
+            <img class="featured-image" src="https://www.foodandwine.com/thmb/la_agsPl3cbNw0ZNm8YmTy_qzlU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Cajun-Chicken-Pasta-FT-RECIPE0823-bfa55e9a4a88491b9dcfdbdac74e12a6.jpg" alt="cajun chicken pasta on plate">
+            <div>
+                <button class="button2">Cajun Chicken Pasta</button>
+            </div>
+        </div>
+        <div>
+            <img class="featured-image" src="https://hips.hearstapps.com/hmg-prod/images/delish-202104-birriatacos-033-1619806490.jpg?crop=1xw:0.8435280189423836xh;center,top&resize=1200:*" alt="birria tacos on plate">
+            <div>
+                <a href="Recipe1-Tacos.html">
+                    <button class="button2">Mexican Birria Tacos</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="divider"></div>
+    <!-- third section of page for the feature recipe -->
+    <div class="taco-recipe">
+    <h2>RECIPE OF THE WEEK:</h2>
+    <figure>
+        <img class="rotw-image" src="https://hips.hearstapps.com/hmg-prod/images/delish-202104-birriatacos-033-1619806490.jpg?crop=1xw:0.8435280189423836xh;center,top&resize=1200:*" alt="">
+        <figcaption>Mexican Birria Tacos</figcaption>
+    </figure>
+    <p>
+     The Birria Taco is juicy, cheesy and delicious - a true showstopper. It's rich and flavourful and will certainly cater to your tastebuds. 
+    </p>
+    <br><br>
+    <div class="ingredients">
+        <p style="text-decoration: underline;">Ingredients:</p>
+        <ul>
+            <li>Beef steak, cut into 15cm cubes</li>
+            <li>2 medium tomatoes, cut in half</li>
+            <li>1 medium onion, cut into 4 pieces</li>
+            <li>2 garlic cloves</li>
+            <li>1 tbsp sunflower oil</li>
+        </ul>
+    </div>
+    <br><br>
+    <a href="Recipe1-Tacos.html">
+        <button id="continue-to-recipe" class="button1">Continue to full recipe</button> <!-- Active button that leads to separate recipe page -->
+    </a>
+    </div>
+    <div class="divider"></div>
+    <footer>
+        <p style="text-align: center;">©Copyright Del LTD</p>
+    </footer>
+</body>
+
+</html>

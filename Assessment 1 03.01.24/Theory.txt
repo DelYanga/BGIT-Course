@@ -1,0 +1,47 @@
+Assessment 1 - 3rd January 2024
+
+HTML BASICS
+    Q: What is the purpose of the HTML <DOCTYPE> declaration?
+    A: The DOCTYPE declaration outlines the type of HTML document so it can be accurately displayed on a webpage. 
+
+    Q: Explain the difference between <div> and <span> tags.
+    A: <div> are used to create sections within a webpage that houses elements with the container. They can be used to group similar content together or to create division within a webpage for structural purposes
+    A: <span> element is used to style elements such as text elements inline. they allow you to create containers within a sentence to style a particular word or phrase
+
+    Q: What is semantic HTML, and why is it important?
+    A: Semantic HTML is focused on structuring a webpage according to the content's meaning, and is important for accessibility for those who are visually impaired, as screen-readers can detect sections of a webpage by name.
+   
+CSS FUNDAMENTALS
+    Q: Describe the difference between margin and padding
+    A: Margin is the space around or outside of the element's content border, and padding is the space within the content border and the element
+
+    Q: What is the box model in CSS?
+    A: the box model explains the 'box' that HTML elements are contained in. Elements always have a border which wraps around the content, and padding inside the said border
+
+    Q: Explain the CSS specificity hierarchy
+    A: -
+
+RESPONSIVE DESIGN
+    Q: What is a media query, and how is it used in responsive design?
+    A: Media query allows you to build layouts that are responsive to different screen sizes such as a mobile, tablet and so on. It allows the content to be viewable in all screen sizes without compromising the design or the layout
+
+    Q: Differences between Adaptive and responsive design
+    A: Adaptive design does not adjust to the size of a screen or webpage, rather the design is made specifically for a particular screen size. Responsive design is when the content of a page can flow across different display sizes while maintaning the original design
+
+    Q: Explain the concept of a viewport in web development
+    A: a viewport identifies the specific page of the user
+
+HTML5 AND CSS FEATURES
+    Q: List and briefly explain three new features introduced in HTML 5
+    A: Semantic HTML which makes HTML docs more compatible with screen-readers for visually impaired users
+    A: Media embedding using specific tags such as <img> and <embed>
+    A: Easy integration of Javascript and CSS 
+
+    Q: What are CSS variables and how do they differ from traditional variables in programming languages?
+    A: -
+
+    Q: Discuss the advantages of using Flexbox or Grid layout in CSS
+    A: Flexbox and Grid allows you to build responsive elements within a webpage by laying out content on an axis in a certain direction or with equal spacing
+
+    
+
