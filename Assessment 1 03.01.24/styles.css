@@ -1,0 +1,40 @@
+body {
+    font-family: poppins;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    background-color: #b3c4e6;
+    font-size: 16px;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+input[type=text], [type=email] {
+    width: 250px
+}
+
+select {
+    width: 250px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color: #316691;
+    color: white;
+}
+
+button:active {
+    background-color: black;
+}
