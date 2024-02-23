@@ -1,5 +1,10 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     width: 100vw;
+    font-family: 'Rethink Sans', sans-serif;
 }
 /* --- STYLING FOR TOP NAV MENU AND SEARCH BAR --- */
 /* header */
@@ -10,7 +15,7 @@ header {
     padding-left: 40px;
     padding-right: 40px;
     /* text-align: left; */
-    background-color: #f0f5f1;
+    background-color: #eae8ed;
     align-items: center;
 }
 
@@ -21,12 +26,30 @@ header {
     align-items: center;
 }
 
+#icons {
+    /* border: 1px solid salmon; */
+    display: flex;
+    width: 110px;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    float: right;
+}
+
+.profile-icon, .bag-icon, .faves-icon {
+    width: 28px;
+    height: 22px;
+}
+
 /* menu items */
 .categories {
-    width: 900px;
+    width: 700px;
     display: flex;
+    position: relative;
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 #primary-navigation {
@@ -37,6 +60,43 @@ header {
 li {
     margin-right: 20px; 
     list-style: none;
+    color: black;
+    height: 100%;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+/* DROPDOWN MENU */
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.menu-dropdown li {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-dropdown li:hover {
+    background-color: #453a4f;
+    color: #eae8ed;
+}
+
+.categories:hover .menu-dropdown {
+    display: block;
+}
+/* DROPDOWN MENU ^^ */
+
+#space {
+    width: 100px;
+    /* border: 1px solid papayawhip; */
 }
 
 /* search box */
@@ -45,6 +105,7 @@ li {
     height: 40px;
     /* border: 2px solid palevioletred; */
     border-bottom: 0.5px black solid;
+    float: right;
 }
 
 .search-wrapper {
@@ -74,23 +135,359 @@ li {
 
 /* --- STYLING FOR HOMEPAGE CAROUSEL --- */
 #hmpg-carousel {
-    /* width: 1200px; */
+    /* width: 1400px; */
+    border-radius: 10px;
+    width: 90vw;
     height: 600px;
     justify-content: center;
     margin: auto;
 }
 
-/* .c-image {
+.c-image { /* styling for carousel image */
     height: 600px;
-} */
+    width: 800px;
+    border-radius: 10px;
+    border: 0.5px solid lightgray;
+}
 
 .carousel-item {
     height: 100%;
+    width: 100%;
 }
 
-.loubs {
-    height: 100%;
-    width: auto;
-    object-fit: none;
-    object-position: 0px -1100px;
+.carousel-button {
+    background-color: #453a4f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 36px;
+    width: 150px;
 }
+
+.carousel-control-prev, .carousel-control-next {
+    border: none;
+    background-color: transparent;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* --- STYLING FOR "WHATS TRENDING" GRID --- */
+.trending-grid {
+    --gap: 16px;
+    --num-cols: 5;
+    --row-height: 200px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    width: 80vw;
+    margin: auto;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+} 
+
+.trending-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item-1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+
+.hmpg-button {
+    background-color: #453a4f;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 36px;
+    width: 150px;
+}
+
+/* .item-2 {
+    grid-row: 1 / 2 ;
+} */
+
+/* .item-4 {
+    grid-row: 1 / 2;
+} */
+
+/* STYLING FOR "TOP BRANDS" DIV */
+.logos {
+    width: 80px;
+    height: 35px;
+    opacity: 0.5;
+}
+
+.brands-container {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid salmon; */
+    width: 1200px;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* @media screen and (min-width:600px) {
+    .brands-container {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .brands-container {
+        width: 500px;
+    }
+} */
+
+.line {
+    width: 800px;
+    border: 0.5px solid lightgray;
+    display: block;
+    margin: auto;
+}
+
+/* --- STYLING FOR "BESTSELLERS" CARDS --- */
+#bestsellers {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-caption {
+    /* padding: 2px 16px; */
+    margin: 10px;
+}
+
+.bestseller-img {
+    border-radius: 10px;
+    width: 92%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card-cta {
+    background-color: #453a4f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 36px;
+    width: 100%;
+}
+
+@media screen and (min-width: 601px) {
+    h5 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .card-cta {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h5 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .card-cta {
+        font-size: 11px;
+    }
+}
+
+/* STYLING FOR PRODUCT PREVIEW */
+.preview-wrap {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-wrap .product-preview {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: #eae8ed;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+    height: 30rem;
+}
+
+.preview-wrap .product-preview.active {
+    display: inline-block;
+}
+
+.preview-wrap, .product-preview img {
+    height: 15rem;
+}
+
+.pp-button {
+    color: white;
+    background-color: #453a4f;
+    width: 12rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 36px;
+}
+
+.preview-wrap .product-preview .fa-times-circle {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #24262b;
+    font-size: 2rem;
+}
+
+.pp-image {
+    width: 150px;
+    height: 120px;
+    justify-content: left;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+select {
+    width: 120px;
+}
+
+button:hover {
+    color: black;
+    background-color: #eae8ed;
+    width: 12rem;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 14px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+/* STYLING FOR FOOTER, TEMPLATE TAKEN ONLINE */
+.container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #eae8ed;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #453a4f;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #453a4f;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
