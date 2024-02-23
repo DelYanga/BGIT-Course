@@ -1,0 +1,20 @@
+Question 1:
+Closures are used to combine functions together with references to its surrounding state. It gives you access to an outer function's scope fromm an inner function.
+
+Question 2:
+Var: is used to declare variables in javascript that contain information. for example,
+    var x = 100. this variable can then be referenced elsewhere in your code
+
+Let: is used to declare vriables that are block-scoped. these variables cannot be redeclared and must be declared before used.
+    let name = value
+
+Const: is used to declare a variable that cannot be reassigned a new value. the value of a const variable cannot be changed once it has been declared
+
+Question 3:
+a higher order function is a function that takes another function as an argument or returns a function
+
+Question 4:
+Props, also known as properties, are used to pass data between React components.
+State allows components to create and manage their own data internally
+
+Question 5:

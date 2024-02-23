@@ -1,0 +1,182 @@
+/*  STYLING FOR RECIPES PAGES*/
+
+body {
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "Wondershine";
+    line-height: 150px;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Wondershine";
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* styling for top nav menu and search bar (header) */
+header {
+    height: 50px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+    background-color: #f0f5f1;
+    margin-bottom: 0;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu { /* class for the div within the nav */
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-menu { 
+    text-decoration: none;
+    color: black;
+    padding: 0px;
+}
+
+input {
+    float: right;
+    border-radius: 20px;
+    width: 340px;
+    height: 35px;
+    padding-left: 10px;
+    border: none;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+/* styling for main section of webpage */
+
+.main-tacos {
+    background-color: #f0f5f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    gap: 50px;
+}
+
+.button2 {
+    height: 40px;
+    width: 150px;
+    border-radius: 0;
+    background-color: white;
+    color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid 1px black;
+    margin: 10px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* styling for buttons */
+
+.button2:hover {
+    background-color: #5f7a6e;
+    color: white;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    border: 0;
+}
+
+.button1 {
+    height: 110px;
+    width: 110px;
+    border-radius: 60px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.button1:hover {
+    background-color: #5f7a6e;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.button1:active {
+    background-color: #5f7a6e;
+    height: 130px;
+    width: 130px;
+    border-radius: 70px;
+    transition-duration: 0s;
+    font-size: 14px;
+}
+
+
+.top-images {
+    display: block;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.featured-image {
+    width: 280px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.ingredients {
+    width: 300px;
+    margin: auto;
+}
+
+.instructions {
+    width: 600px;
+    margin: auto;
+}
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.divider {
+    border: solid #5f7a6e 0.8px;
+    width: 800px;
+    align-content: center;
+    margin: 50px auto;
+}
